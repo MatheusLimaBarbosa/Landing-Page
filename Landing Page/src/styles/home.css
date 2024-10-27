@@ -49,12 +49,13 @@
 #phone-button button {
     box-shadow: none;
 }
+
 #banner {
     display: flex;
     align-items: start;
     justify-content: end;
     width: 70%;
-    z-index: 1;
+    z-index: 2;
 }
 
 #banner img {
@@ -69,8 +70,8 @@
     position: absolute;
     border-radius: 40% 30% 0% 20%;
     top: 0;
-    right: 0;   
-    z-index: 0;
+    right: 0;
+    z-index: 1;
 }
 
 @media screen and (max-width: 1170px) {
@@ -79,14 +80,14 @@
         padding-top: 0px;
     }
 
-    #banner, banner img, #home .shape {
+    #banner, #banner img, #home .shape {
         display: none;
     }
 
     #cta {
         width: 100%;
-        align-items: center;
         text-align: center;
+        justify-content: center;
     }
 }
 
